@@ -1,24 +1,3 @@
 # dog_breed_guessing_game
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/67824760/146643007-044b7f95-7832-4362-927f-39ee971b3af4.gif)
