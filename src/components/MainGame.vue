@@ -8,7 +8,7 @@
     <div class="img"></div>
     <div class="img"><img :src="`${img}`"></div>
     <div class="img"></div>
-    <failModalVue v-show="isModalVisible" @close="closeModal" :score="score" :correctAnswer="answer" />
+    <failModalVue v-show="isModalVisible" @close="closeModal" :score="scoreTemp" :correctAnswer="answer" />
     <div class="buttons">
       <button class="btn" @click="guess(1)">{{valueOne}}</button>
       <button class="btn" @click="guess(2)">{{valueTwo}}</button>
@@ -46,6 +46,7 @@ export default {
       score: 0,
       isModalVisible: false,
       correctAnswerTemp: "test",
+      scoreTemp: ''
     }
   },
   computed: {
@@ -71,6 +72,7 @@ export default {
         this.score++
         this.getImage()
       } else {
+        this.scoreTemp = this.score
         this.score = 0
         this.showModal()
       }
